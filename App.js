@@ -50,6 +50,7 @@ export default class App extends React.Component {
         <TouchableOpacity
           style={styles.goButton}
           onPress={() => {
+            console.log( "Heelo")
             var word = this.state.text.toLowerCase().trim();
             db[word]?(
             this.setState({ chunks: db[word].chunks }),
